@@ -31,7 +31,7 @@ export default function Services() {
                     reverse ? 'lg:[direction:rtl]' : ''
                   }`}
                 >
-                  <div className="overflow-hidden rounded-[2rem] shadow-xl shadow-ocean-900/10 ring-1 ring-ocean-100 lg:[direction:ltr]">
+                  <div className="overflow-hidden rounded-[2rem] shadow-xl shadow-forest-900/10 ring-1 ring-forest-100 lg:[direction:ltr]">
                     <img
                       src={s.image}
                       alt={s.name}
@@ -40,20 +40,20 @@ export default function Services() {
                     />
                   </div>
                   <div className="lg:[direction:ltr]">
-                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-ocean-100 text-ocean-600">
+                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-forest-100 text-forest-600">
                       <Icon name={s.icon} className="h-6 w-6" />
                     </span>
-                    <h2 className="mt-4 font-display text-3xl font-bold text-ocean-900">
+                    <h2 className="mt-4 font-display text-3xl font-bold text-forest-900">
                       {s.name}
                     </h2>
-                    <p className="mt-4 leading-relaxed text-ocean-800/75">
+                    <p className="mt-4 leading-relaxed text-forest-800/75">
                       {s.description}
                     </p>
                     <ul className="mt-5 flex flex-wrap gap-2">
                       {s.highlights.map((h) => (
                         <li
                           key={h}
-                          className="rounded-full bg-ocean-50 px-4 py-1.5 text-sm font-medium text-ocean-700 ring-1 ring-ocean-100"
+                          className="rounded-full bg-forest-50 px-4 py-1.5 text-sm font-medium text-forest-700 ring-1 ring-forest-100"
                         >
                           {h}
                         </li>
@@ -74,18 +74,18 @@ export default function Services() {
       </section>
 
       {/* Home service callout */}
-      <section className="bg-sand-100 py-16">
+      <section className="bg-cream-100 py-16">
         <div className="mx-auto max-w-5xl px-5">
           <SectionReveal>
-            <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-10 text-center shadow-lg shadow-ocean-900/5 ring-1 ring-ocean-100 sm:flex-row sm:text-left">
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-ocean-400 to-ocean-600 text-white shadow-md">
+            <div className="flex flex-col items-center gap-6 rounded-3xl bg-white p-10 text-center shadow-lg shadow-forest-900/5 ring-1 ring-forest-100 sm:flex-row sm:text-left">
+              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-forest-400 to-forest-600 text-white shadow-md">
                 <Icon name="home" className="h-8 w-8" />
               </span>
               <div className="flex-1">
-                <h3 className="font-display text-2xl font-bold text-ocean-900">
+                <h3 className="font-display text-2xl font-bold text-forest-900">
                   Home Service Available
                 </h3>
-                <p className="mt-2 text-ocean-800/70">
+                <p className="mt-2 text-forest-800/70">
                   Prefer to relax in the comfort of your own home? Book any of
                   our treatments by reservation and we’ll come to you.
                 </p>

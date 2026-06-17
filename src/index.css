@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-/* ===== Blueceana Spa — Light-Blue Ocean Theme ===== */
+/* ============================================================
+   Blueceana Spa — Deep Forest Green + Warm Neutrals
+   Tokens use the names `forest` (green), `cream` (warm neutral
+   ivory) and `accent` (champagne beige). Re-theme by editing
+   the hex values below.
+   ============================================================ */
 @theme {
-  /* Light blue → deep ocean palette */
-  --color-ocean-50: #f0f9ff;
-  --color-ocean-100: #dcf1fb;
-  --color-ocean-200: #b9e3f6;
-  --color-ocean-300: #8ed2ef;
-  --color-ocean-400: #5bb8e8;
-  --color-ocean-500: #34a0db;
-  --color-ocean-600: #1f86c4;
-  --color-ocean-700: #0e7cb0;
-  --color-ocean-800: #0b5e87;
-  --color-ocean-900: #0b3a53;
+  /* Deep forest green scale */
+  --color-forest-50: #f0f4ee;
+  --color-forest-100: #dee7da;
+  --color-forest-200: #bfcfba;
+  --color-forest-300: #9bb295;
+  --color-forest-400: #75906f;
+  --color-forest-500: #5c7a5a;
+  --color-forest-600: #4f6f52; /* secondary — sage/olive */
+  --color-forest-700: #35503f;
+  --color-forest-800: #1f3a32; /* primary — deep forest green */
+  --color-forest-900: #152821;
 
-  /* Soft sand / cream accent */
-  --color-sand-50: #fdfbf7;
-  --color-sand-100: #faf7f0;
-  --color-sand-200: #f3ecdd;
+  /* Warm neutral / ivory */
+  --color-cream-50: #fbf9f5;
+  --color-cream-100: #f7f4ee; /* background — warm ivory */
+  --color-cream-200: #efe9dd;
+  --color-cream-300: #e4dbca;
 
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  /* Champagne beige accent */
+  --color-accent-200: #e7dccb;
+  --color-accent-300: #d6c5ac;
+  --color-accent-400: #c7b299; /* accent — champagne beige */
+  --color-accent-500: #b09876;
+  --color-accent-600: #968063;
+  --color-accent-700: #7a684f;
+
+  /* Warm near-black text */
+  --color-ink: #2b2b2b;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
 }
 
 html {
@@ -30,12 +47,19 @@ html {
 body {
   margin: 0;
   font-family: var(--font-sans);
-  color: var(--color-ocean-900);
-  background-color: #ffffff;
+  color: var(--color-ink);
+  background-color: var(--color-cream-100);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Floating bubble animation */
+/* Serif display headings get a touch more weight and tighter tracking */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+}
+
+/* Floating particle animation */
 @keyframes float-up {
   0% {
     transform: translateY(0) scale(1);

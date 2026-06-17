@@ -17,14 +17,14 @@ export default function Page({ children }) {
 // Reusable page header band for inner pages.
 export function PageHeader({ eyebrow, title, subtitle }) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-ocean-600 to-ocean-800 pb-20 pt-32 text-center text-white">
+    <section className="relative overflow-hidden bg-gradient-to-br from-forest-600 to-forest-800 pb-20 pt-32 text-center text-white">
       <div className="mx-auto max-w-3xl px-5">
         {eyebrow && (
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-semibold uppercase tracking-[0.3em] text-ocean-200"
+            className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-300"
           >
             {eyebrow}
           </motion.p>
@@ -42,7 +42,7 @@ export function PageHeader({ eyebrow, title, subtitle }) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.12 }}
-            className="mx-auto mt-4 max-w-xl text-ocean-50/90"
+            className="mx-auto mt-4 max-w-xl text-forest-50/90"
           >
             {subtitle}
           </motion.p>

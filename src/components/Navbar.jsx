@@ -27,8 +27,8 @@ export default function Navbar() {
     `relative text-sm font-medium transition-colors ${
       scrolled
         ? isActive
-          ? 'text-ocean-600'
-          : 'text-ocean-900/70 hover:text-ocean-600'
+          ? 'text-forest-600'
+          : 'text-forest-900/70 hover:text-forest-600'
         : isActive
           ? 'text-white'
           : 'text-white/85 hover:text-white'
@@ -38,7 +38,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/85 shadow-sm shadow-ocean-900/5 backdrop-blur-md'
+          ? 'bg-white/85 shadow-sm shadow-forest-900/5 backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >
@@ -57,7 +57,7 @@ export default function Navbar() {
                     <motion.span
                       layoutId="nav-underline"
                       className={`absolute -bottom-1.5 left-0 h-0.5 w-full rounded-full ${
-                        scrolled ? 'bg-ocean-500' : 'bg-white'
+                        scrolled ? 'bg-forest-500' : 'bg-white'
                       }`}
                     />
                   )}
@@ -80,7 +80,7 @@ export default function Navbar() {
           onClick={() => setOpen((v) => !v)}
           className={`flex h-10 w-10 items-center justify-center rounded-xl ring-1 transition-colors md:hidden ${
             scrolled
-              ? 'text-ocean-800 ring-ocean-100'
+              ? 'text-forest-800 ring-forest-100'
               : 'text-white ring-white/40'
           }`}
           aria-label="Toggle menu"
@@ -113,7 +113,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="overflow-hidden border-t border-ocean-100 bg-white/95 backdrop-blur-md md:hidden"
+            className="overflow-hidden border-t border-forest-100 bg-white/95 backdrop-blur-md md:hidden"
           >
             <div className="flex flex-col gap-1 px-5 py-4">
               {navLinks.map((l) => (
@@ -124,8 +124,8 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `rounded-xl px-4 py-3 text-sm font-medium ${
                       isActive
-                        ? 'bg-ocean-50 text-ocean-700'
-                        : 'text-ocean-900/80 hover:bg-ocean-50'
+                        ? 'bg-forest-50 text-forest-700'
+                        : 'text-forest-900/80 hover:bg-forest-50'
                     }`
                   }
                 >
@@ -134,7 +134,7 @@ export default function Navbar() {
               ))}
               <a
                 href={`tel:${business.phones[0].tel}`}
-                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-ocean-600 px-5 py-3 text-sm font-semibold text-white"
+                className="mt-2 flex items-center justify-center gap-2 rounded-full bg-forest-600 px-5 py-3 text-sm font-semibold text-white"
               >
                 <Icon name="phone" className="h-4 w-4" />
                 Call to Book

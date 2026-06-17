@@ -1,14 +1,14 @@
-// Blueceana wordmark + ocean-drop emblem.
+// Blueceana wordmark + forest-drop emblem.
 export default function Logo({ light = false, className = '' }) {
-  const textColor = light ? 'text-white' : 'text-ocean-900'
-  const subColor = light ? 'text-ocean-100/80' : 'text-ocean-500'
+  const textColor = light ? 'text-white' : 'text-forest-900'
+  const subColor = light ? 'text-accent-300' : 'text-accent-600'
   return (
     <span className={`flex items-center gap-2.5 ${className}`}>
       <svg viewBox="0 0 48 48" className="h-10 w-10 shrink-0" aria-hidden="true">
         <defs>
           <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#5bb8e8" />
-            <stop offset="1" stopColor="#0e7cb0" />
+            <stop offset="0" stopColor="#75906f" />
+            <stop offset="1" stopColor="#1f3a32" />
           </linearGradient>
         </defs>
         <circle cx="24" cy="24" r="22" fill="url(#logoGrad)" />

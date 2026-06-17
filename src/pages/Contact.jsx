@@ -41,11 +41,11 @@ export default function Contact() {
         <div className="mx-auto grid max-w-6xl gap-8 px-5 lg:grid-cols-[1fr_1.1fr]">
           {/* Left: phones + facebook */}
           <SectionReveal>
-            <div className="rounded-3xl bg-gradient-to-br from-ocean-600 to-ocean-800 p-8 text-white shadow-xl shadow-ocean-900/20">
+            <div className="rounded-3xl bg-gradient-to-br from-forest-600 to-forest-800 p-8 text-white shadow-xl shadow-forest-900/20">
               <h2 className="font-display text-2xl font-bold">
                 Reservations & Home Services
               </h2>
-              <p className="mt-2 text-sm text-ocean-50/80">
+              <p className="mt-2 text-sm text-forest-50/80">
                 Call or message us to book your relaxing session.
               </p>
 
@@ -60,7 +60,7 @@ export default function Contact() {
                       <Icon name="phone" className="h-5 w-5" />
                     </span>
                     <span>
-                      <span className="block text-xs uppercase tracking-wide text-ocean-100/70">
+                      <span className="block text-xs uppercase tracking-wide text-forest-100/70">
                         Call / Text
                       </span>
                       <span className="font-display text-lg font-semibold">
@@ -80,7 +80,7 @@ export default function Contact() {
                     <Icon name="facebook" className="h-5 w-5" />
                   </span>
                   <span>
-                    <span className="block text-xs uppercase tracking-wide text-ocean-100/70">
+                    <span className="block text-xs uppercase tracking-wide text-forest-100/70">
                       Message us on
                     </span>
                     <span className="font-display text-lg font-semibold">
@@ -96,16 +96,16 @@ export default function Contact() {
           <div className="grid gap-5 sm:grid-cols-1">
             {infoCards.map((card, i) => (
               <SectionReveal key={card.title} delay={i * 0.08}>
-                <div className="flex gap-4 rounded-3xl bg-ocean-50/70 p-6 ring-1 ring-ocean-100">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-ocean-600 shadow-sm">
+                <div className="flex gap-4 rounded-3xl bg-forest-50/70 p-6 ring-1 ring-forest-100">
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-forest-600 shadow-sm">
                     <Icon name={card.icon} className="h-6 w-6" />
                   </span>
                   <div>
-                    <h3 className="font-display text-lg font-semibold text-ocean-900">
+                    <h3 className="font-display text-lg font-semibold text-forest-900">
                       {card.title}
                     </h3>
                     {card.lines.map((line) => (
-                      <p key={line} className="text-sm text-ocean-800/70">
+                      <p key={line} className="text-sm text-forest-800/70">
                         {line}
                       </p>
                     ))}
@@ -118,10 +118,10 @@ export default function Contact() {
       </section>
 
       {/* Map */}
-      <section className="bg-sand-100 pb-20">
+      <section className="bg-cream-100 pb-20">
         <div className="mx-auto max-w-6xl px-5">
           <SectionReveal>
-            <div className="overflow-hidden rounded-3xl shadow-xl shadow-ocean-900/10 ring-1 ring-ocean-100">
+            <div className="overflow-hidden rounded-3xl shadow-xl shadow-forest-900/10 ring-1 ring-forest-100">
               <iframe
                 title="Blueceana Spa location on Google Maps"
                 src={maps.embedSrc}

@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 
 const styles = {
   primary:
-    'bg-ocean-600 text-white shadow-lg shadow-ocean-600/30 hover:bg-ocean-700',
+    'bg-forest-600 text-white shadow-lg shadow-forest-600/30 hover:bg-forest-700',
   secondary:
-    'bg-white text-ocean-700 ring-1 ring-ocean-200 hover:bg-ocean-50',
+    'bg-white text-forest-700 ring-1 ring-forest-200 hover:bg-forest-50',
   light:
     'bg-white/15 text-white ring-1 ring-white/40 backdrop-blur hover:bg-white/25',
 }

@@ -14,11 +14,11 @@ export default function Home() {
   return (
     <Page>
       {/* ===== HERO ===== */}
-      <section className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-ocean-400 via-ocean-600 to-ocean-800 pt-24">
+      <section className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-forest-400 via-forest-600 to-forest-800 pt-24">
         <Bubbles />
         {/* soft glow accents */}
-        <div className="pointer-events-none absolute -left-24 top-20 h-72 w-72 rounded-full bg-ocean-300/30 blur-3xl" />
-        <div className="pointer-events-none absolute -right-20 bottom-32 h-80 w-80 rounded-full bg-ocean-200/20 blur-3xl" />
+        <div className="pointer-events-none absolute -left-24 top-20 h-72 w-72 rounded-full bg-forest-300/30 blur-3xl" />
+        <div className="pointer-events-none absolute -right-20 bottom-32 h-80 w-80 rounded-full bg-forest-200/20 blur-3xl" />
 
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-24 lg:grid-cols-2">
           <div className="text-center text-white lg:text-left">
@@ -40,14 +40,14 @@ export default function Home() {
             >
               Relax. Refresh.
               <br />
-              <span className="text-ocean-100">Renew.</span>
+              <span className="text-forest-100">Renew.</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="mx-auto mt-5 max-w-md text-lg text-ocean-50/90 lg:mx-0"
+              className="mx-auto mt-5 max-w-md text-lg text-forest-50/90 lg:mx-0"
             >
               {business.shortPitch}
             </motion.p>
@@ -71,7 +71,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.7, delay: 0.5 }}
-              className="mt-6 text-sm text-ocean-50/80"
+              className="mt-6 text-sm text-forest-50/80"
             >
               {business.tagline} · Call{' '}
               <a className="font-semibold underline-offset-2 hover:underline" href={`tel:${business.phones[0].tel}`}>
@@ -90,7 +90,7 @@ export default function Home() {
             <motion.div
               animate={{ y: [0, -14, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-              className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-ocean-900/40 ring-1 ring-white/30"
+              className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-forest-900/40 ring-1 ring-white/30"
             >
               <img
                 src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80"
@@ -103,12 +103,12 @@ export default function Home() {
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
               className="absolute -bottom-6 -left-6 flex items-center gap-3 rounded-2xl bg-white/95 px-5 py-4 shadow-xl backdrop-blur"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-ocean-100 text-ocean-600">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-200 text-accent-700">
                 <Icon name="sparkle" className="h-6 w-6" />
               </span>
               <div className="text-left">
-                <p className="font-display text-lg font-bold text-ocean-900">₱199</p>
-                <p className="text-xs text-ocean-800/70">Promo Time 1–5 PM</p>
+                <p className="font-display text-lg font-bold text-forest-900">₱199</p>
+                <p className="text-xs text-forest-800/70">Promo Time 1–5 PM</p>
               </div>
             </motion.div>
           </motion.div>
@@ -128,11 +128,11 @@ export default function Home() {
             { icon: 'tag', label: 'Affordable Promos' },
           ].map((item, i) => (
             <SectionReveal key={item.label} delay={i * 0.1}>
-              <div className="flex items-center gap-4 rounded-2xl bg-ocean-50/60 px-6 py-5 ring-1 ring-ocean-100">
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-ocean-600 shadow-sm">
+              <div className="flex items-center gap-4 rounded-2xl bg-forest-50/60 px-6 py-5 ring-1 ring-forest-100">
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-forest-600 shadow-sm">
                   <Icon name={item.icon} className="h-6 w-6" />
                 </span>
-                <p className="font-display font-semibold text-ocean-900">
+                <p className="font-display font-semibold text-forest-900">
                   {item.label}
                 </p>
               </div>
@@ -142,16 +142,16 @@ export default function Home() {
       </section>
 
       {/* ===== SERVICES PREVIEW ===== */}
-      <section className="bg-sand-100 py-20">
+      <section className="bg-cream-100 py-20">
         <div className="mx-auto max-w-6xl px-5">
           <SectionReveal className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ocean-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-600">
               What We Offer
             </p>
-            <h2 className="mt-3 font-display text-4xl font-bold text-ocean-900">
+            <h2 className="mt-3 font-display text-4xl font-bold text-forest-900">
               Treatments to Melt Your Stress Away
             </h2>
-            <p className="mt-4 text-ocean-800/70">
+            <p className="mt-4 text-forest-800/70">
               Each session is designed to relax your body, calm your mind, and
               leave you feeling renewed.
             </p>
@@ -177,13 +177,13 @@ export default function Home() {
       </section>
 
       {/* ===== WHY CHOOSE US ===== */}
-      <section className="relative bg-ocean-50 py-20">
+      <section className="relative bg-forest-50 py-20">
         <div className="mx-auto max-w-6xl px-5">
           <SectionReveal className="mx-auto max-w-2xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-ocean-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-accent-600">
               Why Blueceana
             </p>
-            <h2 className="mt-3 font-display text-4xl font-bold text-ocean-900">
+            <h2 className="mt-3 font-display text-4xl font-bold text-forest-900">
               A Calming Escape You’ll Love
             </h2>
           </SectionReveal>
@@ -191,14 +191,14 @@ export default function Home() {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {whyChooseUs.map((item, i) => (
               <SectionReveal key={item.title} delay={i * 0.1}>
-                <div className="h-full rounded-3xl bg-white p-7 text-center shadow-lg shadow-ocean-900/5 ring-1 ring-ocean-100">
-                  <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-ocean-400 to-ocean-600 text-white shadow-md">
+                <div className="h-full rounded-3xl bg-white p-7 text-center shadow-lg shadow-forest-900/5 ring-1 ring-forest-100">
+                  <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-forest-400 to-forest-600 text-white shadow-md">
                     <Icon name={item.icon} className="h-7 w-7" />
                   </span>
-                  <h3 className="mt-5 font-display text-lg font-semibold text-ocean-900">
+                  <h3 className="mt-5 font-display text-lg font-semibold text-forest-900">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ocean-800/70">
+                  <p className="mt-2 text-sm leading-relaxed text-forest-800/70">
                     {item.text}
                   </p>
                 </div>
@@ -209,13 +209,13 @@ export default function Home() {
       </section>
 
       {/* ===== CTA ===== */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-ocean-600 to-ocean-800 py-20 text-center text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-forest-600 to-forest-800 py-20 text-center text-white">
         <Bubbles />
         <SectionReveal className="relative mx-auto max-w-2xl px-5">
           <h2 className="font-display text-4xl font-bold">
             Ready to Unwind?
           </h2>
-          <p className="mt-4 text-ocean-50/90">
+          <p className="mt-4 text-forest-50/90">
             Reserve your relaxing session today — or let us bring the spa
             experience to your home.
           </p>
